@@ -96,5 +96,5 @@ class return_rent_book_view(viewsets.ModelViewSet):
             bookallocation_object.rented_date, bookallocation_object.return_date)
 
         data = 'Book has returned and the payment for renting the book is not find' + \
-            str(data)
+            str(fine)
         return Response({'success': data})
